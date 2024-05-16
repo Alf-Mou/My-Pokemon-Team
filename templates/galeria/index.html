@@ -15,12 +15,19 @@
             <a href="#" class="cabecalho__grupo__links" >My Pokemon Team</a>
         </nav>
         <div class="cabecalho__busca">
-            <div class="cabecalho__busca__fundo">
-                <input class="busca__input" type="text" placeholder="Search">
-            </div>
-            <img src="{% static 'assets/linguagem.png' %}">
+            <div class="input-container">
+                <input placeholder="Search" class="input-field" type="text">
+                <label for="input-field" class="input-label">Search</label>
+                <span class="input-highlight"></span>
+              </div>
+              <img src="{% static 'assets/linguagem.png' %}">
         </div>
-
     </header>
+    <main>
+        
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">Copyright © 2024 PokemonTeam | All rights reserved | Terms and conditions | Privacy Policy</p>
+    </footer>
 </body>
 </html>
