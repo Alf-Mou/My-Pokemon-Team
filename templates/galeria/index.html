@@ -23,11 +23,53 @@
               <img src="{% static 'assets/linguagem.png' %}">
         </div>
     </header>
-    <main>
-        
+    <main class="principal">
+        <h1 class="principal__titulo">My Pokemon Team</h1>
+        <div class="principal__grupo">
+            <div class="principal__grupo__1">
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+            </div>  
+            <div class="principal__grupo__1">
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+            </div>
+        </div>
     </main>
     <footer class="rodape">
-        <p class="rodape__texto">Copyright © 2024 PokemonTeam | All rights reserved | Terms and conditions | Privacy Policy</p>
+        <p class="rodape__texto">Copyright © 2024 PokemonTeam | All rights reserved | <a class="rodape__texto__link" href="#">Terms and conditions</a> | <a class="rodape__texto__link" href="#">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
