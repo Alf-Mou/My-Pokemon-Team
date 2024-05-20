@@ -4,6 +4,7 @@
     --cor-de-fundo: #181818;
     --cor-secundaria: #262626;
     --cor-texto: #FFFFFF;
+    --cor-container: #242526;
 
     --fonte-principal: "Poppins", sans-serif;
 }
@@ -156,5 +157,123 @@ body {
   color: var(--cor-texto);
 }
 
+.principal__pokemon {
+  margin: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
+
+.pokemon__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.pokemon__container1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 312px;
+}
+
+.pokemon__container1__infos {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.pokemon__nome {
+  font-size: 60px;
+}
+
+.pokemon__infos {
+  display: flex;
+  gap: 8px;
+
+}
+
+.pokemon__infos__altura {
+  background-color: #521568;
+  width: 156px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.pokemon__infos__peso {
+  background-color: #9871EB;
+  width: 170px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.pokemon__titulo {
+  font-size: 24px;
+  color: #F84D2E;
+}
+
+.pokemon__container2 {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.pokemon__descricao{
+  font-size: 24px;
+  width: 1052px;
+  height: 252px;
+}
+
+.pokemon__tipo {
+  background-color: var(--cor-container);
+  border-radius: 24px;
+}
+
+.tipo__titulo {
+  font-size: 32px;
+  margin: 16px 0 0 25.5px;
+}
+
+.tipo__container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 25.5px;
+  gap: 16px;
+}
+
+.tipo__container__tipo1 {
+  background-color: #FF4422;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 68px;
+  border-radius: 16px;
+}
+
+.tipo__container__tipo2 {
+  background-color: #B65342;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 68px;
+  border-radius: 16px;
+}
+
+.tipo1 {
+  font-size: 24px;
+}
+
+.tipo2 {
+  font-size: 24px;
+}
   
