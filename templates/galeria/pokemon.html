@@ -27,6 +27,63 @@
                     </div>
                 </div>
             </div>
+        </div> 
+        <div class="pokemon__container3">
+            <div class="pokemon__stats">
+                <p class="pokemon__stats__titulo">Base stats</p>
+                <ul class="stats__lista">
+                    <li>
+                        <p class="stats__nome" >HP</p>
+                        <p class="stats__valor">75</p>
+                    </li>
+                    <li>
+                        <p class="stats__nome">Attack</p>
+                        <p class="stats__valor">75</p>
+                    </li>
+                    <li>
+                        <p class="stats__nome">Defense</p>
+                        <p class="stats__valor">75</p>
+                    </li>
+                    <li>
+                        <p class="stats__nome">Sp. Atk</p>
+                        <p class="stats__valor">75</p>
+                    </li>
+                    <li>
+                        <p class="stats__nome">Sp. Def</p>
+                        <p class="stats__valor">75</p>
+                    </li>
+                    <li>
+                        <p class="stats__nome">Speed</p>
+                        <p class="stats__valor">75</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <p class="stats__nome">Total</p>
+                        <p class="stats__valor">75</p>
+                    </li>
+                </ul>
+            </div>
+            <img src="{% static 'assets/pokemon_info.png' %}">
+        </div>
+        <div class="pokemon__container4">
+            <p>Evolution Chart</p>
+            <div class="pokemon__evolutionLine">
+                <div class="pokemon__evolutionLine__individual" >
+                    <img src="{% static 'assets/infernape_evolution.png' %}" >
+                    <p class="pokemon__evolutionLine__name" >Infernape</p>
+                </div>
+                <img src="{% static 'assets/arrow.png' %}">
+                <div class="pokemon__evolutionLine__individual" >
+                    <img src="{% static 'assets/infernape_evolution.png' %}" >
+                    <p class="pokemon__evolutionLine__name"> Infernape</p>
+                </div>
+                <img src="{% static 'assets/arrow.png' %}">
+                <div class="pokemon__evolutionLine__individual" >
+                    <img src="{% static 'assets/infernape_evolution.png' %}" >
+                    <p class="pokemon__evolutionLine__name" >Infernape</p>
+                </div>
+                <img>
+            </div>
         </div>
     </main>
 {% endblock %}
