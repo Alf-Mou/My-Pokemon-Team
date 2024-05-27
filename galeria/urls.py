@@ -3,5 +3,5 @@ from galeria.views import index, pokemon
 
 urlpatterns = [
     path('', index, name ='index'),
-    path('pokemon/', pokemon, name='pokemon')
+    path('pokemon/<int:poke_id>', pokemon, name='pokemon')
 ]

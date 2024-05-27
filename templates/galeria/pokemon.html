@@ -5,24 +5,24 @@
         <div class="pokemon__container">
             <div class="pokemon__container1">
                 <div class="pokemon__container1__infos">
-                    <p class="pokemon__nome">Infernape</p>
+                    <p class="pokemon__nome">{{ pokemon.nome }}</p>
                     <div class="pokemon__infos">
-                        <div class="pokemon__infos__altura" >Height: 1.2m</div>
-                        <div class="pokemon__infos__peso" >Weight: 55kg</div>
+                        <div class="pokemon__infos__altura" >Height:  {{ pokemon.altura }}m</div>
+                        <div class="pokemon__infos__peso" >Weight: {{ pokemon.peso }}kg</div>
                     </div>
                 </div>
-                <p class="pokemon__titulo">Flame pokemon</p>
+                <p class="pokemon__titulo">{{ pokemon.titulo }}</p>
             </div>
             <div class="pokemon__container2">
-                <p class="pokemon__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus ex id massa convallis malesuada. Fusce convallis elit dolor, eget consectetur ligula finibus ut. Nulla tristique sapien et justo porttitor, id tempus sapien iaculis. Vivamus interdum lacus est, nec congue enim auctor vel. Vestibulum dapibus urna in egestas efficitur. Vestibulum bibendum imperdiet sem, at aliquet urna pharetra non. Maecenas luctus nulla lorem, in condimentum est laoreet vitae. Maecenas laoreet semper quam, a iaculis orci bibendum a. Aenean porttitor egestas arcu a sagittis.</p>
+                <p class="pokemon__descricao">{{ pokemon.descricao }}</p>
                 <div class="pokemon__tipo">
                     <p class="tipo__titulo">Type</p>
                     <div class="tipo__container">
                         <div class="tipo__container__tipo1">
-                            <p class="tipo1">Fire</p>
+                            <p class="tipo1">{{ pokemon.tipo_primario }}</p>
                         </div>
                         <div class="tipo__container__tipo2">
-                            <p class="tipo2">Fighting</p>
+                            <p class="tipo2">{{ pokemon.tipo_secundario }}</p>
                         </div>
                     </div>
                 </div>
@@ -34,32 +34,32 @@
                 <ul class="stats__lista">
                     <li>
                         <p class="stats__nome" >HP</p>
-                        <p class="stats__valor">75</p>
+                        <p class="stats__valor">{{ pokemon.hp }}</p>
                     </li>
                     <li>
                         <p class="stats__nome">Attack</p>
-                        <p class="stats__valor">75</p>
+                        <p class="stats__valor">{{ pokemon.ataque }}</p>
                     </li>
                     <li>
                         <p class="stats__nome">Defense</p>
-                        <p class="stats__valor">75</p>
+                        <p class="stats__valor">{{ pokemon.defesa }}</p>
                     </li>
                     <li>
                         <p class="stats__nome">Sp. Atk</p>
-                        <p class="stats__valor">75</p>
+                        <p class="stats__valor">{{ pokemon.sp_ataque }}</p>
                     </li>
                     <li>
                         <p class="stats__nome">Sp. Def</p>
-                        <p class="stats__valor">75</p>
+                        <p class="stats__valor">{{ pokemon.sp_defesa }}</p>
                     </li>
                     <li>
                         <p class="stats__nome">Speed</p>
-                        <p class="stats__valor">75</p>
+                        <p class="stats__valor">{{ pokemon.velocidade }}</p>
                     </li>
                     <hr>
                     <li>
                         <p class="stats__nome">Total</p>
-                        <p class="stats__valor">75</p>
+                        <p class="stats__valor">{{ pokemon.stats_total }}</p>
                     </li>
                 </ul>
             </div>

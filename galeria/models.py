@@ -19,7 +19,7 @@ class Pokemon(models.Model):
     estagio_um = models.CharField(max_length=50)
     estagio_dois = models.CharField(max_length=50)
     estagio_tres = models.CharField(max_length=50)
-
+    imagem_index = models.CharField(max_length=50)
     def __str__(self):
         return f"Pokemon [pokemon={self.nome}]"
     

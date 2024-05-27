@@ -137,7 +137,7 @@ body {
   border-radius: 180px;
   display: flex;
   justify-content: center;
-
+  align-items: center;
 }
 
 .principal__grupo__nome {
