@@ -107,11 +107,15 @@ body {
   padding: 0 45.18rem 3rem 0;
 }
 
-.principal__grupo {
+.principal__lista{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 60.75rem;
+  height: 41.625rem;
+  list-style-type: none;
+
 }
 
 .principal__grupo__1 {

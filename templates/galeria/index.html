@@ -3,8 +3,58 @@
 {% block content %}
     <main class="principal">
         <h1 class="principal__titulo">My Pokemon Team</h1>
-        <div class="principal__grupo">
-            <div class="principal__grupo__1">
+        <ul class="principal__lista">
+            <li>
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
+                    <div class="principal__grupo__pokemon__imagem">
+                        <img src="{% static 'assets/pokemon.png' %}">
+                    </div>
+                    <p class="principal__grupo__nome">Infernape</p>
+                </a>
+            </li>
+        </ul>
+
+            <!-- <div class="principal__grupo__1">
                 <a href="{% url 'pokemon' %}" class="principal__grupo__pokemon">
                     <div class="principal__grupo__pokemon__imagem">
                         <img src="{% static 'assets/pokemon.png' %}">
@@ -43,7 +93,6 @@
                     </div>
                     <p class="principal__grupo__nome">Infernape</p>
                 </a>
-            </div>
-        </div>
+            </div> -->
     </main>
 {% endblock %}
