@@ -1,13 +1,36 @@
 from django.db import models
 
 class Pokemon(models.Model):
+
+    OPCOES_TIPOS = [
+        ("NORMAL","Normal"),
+        ("FIRE","Fire"),
+        ("WATER","Water"),
+        ("ELECTRIC","Electric"),
+        ("GRASS","Grass"),
+        ("ICE","Ice"),
+        ("FIGHTING","Fighting"),
+        ("POISON","Poison"),
+        ("GROUND","Ground"),
+        ("FLYING","Flying"),
+        ("PSYCHIC","Psychic"),
+        ("BUG","Bug"),
+        ("ROCK","Rock"),
+        ("GHOST","Ghost"),
+        ("DRAGON","Dragon"),
+        ("DARK","Dark"),
+        ("STEEL","Steel"),
+        ("FAIRY","Fairy"),
+    ]
+
+
     nome = models.CharField(max_length=50)
     altura = models.FloatField()
     peso = models.FloatField()
     titulo = models.CharField(max_length=50)
     descricao = models.TextField(max_length=800)
-    tipo_primario = models.CharField(max_length=15)
-    tipo_secundario = models.CharField(max_length=15, blank=True, null=True)
+    tipo_primario = models.CharField(max_length=20, choices=OPCOES_TIPOS, default="")
+    tipo_secundario = models.CharField(max_length=20, choices=OPCOES_TIPOS, default="", blank=True, null=True)
     hp = models.IntegerField()
     ataque = models.IntegerField()
     defesa = models.IntegerField()
