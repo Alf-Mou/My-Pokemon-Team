@@ -7,8 +7,8 @@
                 <div class="pokemon__container1__infos">
                     <p class="pokemon__nome">{{ pokemon.nome }}</p>
                     <div class="pokemon__infos">
-                        <div class="pokemon__infos__altura" >Height:  {{ pokemon.altura }}m</div>
-                        <div class="pokemon__infos__peso" >Weight: {{ pokemon.peso }}kg</div>
+                        <div class="pokemon__infos__altura" >Altura:  {{ pokemon.altura }}m</div>
+                        <div class="pokemon__infos__peso" >Peso: {{ pokemon.peso }}kg</div>
                     </div>
                 </div>
                 <p class="pokemon__titulo">{{ pokemon.titulo }}</p>
@@ -63,24 +63,24 @@
                     </li>
                 </ul>
             </div>
-            <img src="{% static 'assets/pokemon_info.png' %}">
+            <img src="{{ pokemon.imagem }}">
         </div>
         <div class="pokemon__container4">
             <p>Evolution Chart</p>
             <div class="pokemon__evolutionLine">
                 <div class="pokemon__evolutionLine__individual" >
-                    <img src="{% static 'assets/infernape_evolution.png' %}" >
-                    <p class="pokemon__evolutionLine__name" >Infernape</p>
+                    <img src="{{ pokemon.estagio_um_img }}" >
+                    <p class="pokemon__evolutionLine__name" >{{ pokemon.estagio_um_nome }}</p>
                 </div>
                 <img src="{% static 'assets/arrow.png' %}">
                 <div class="pokemon__evolutionLine__individual" >
-                    <img src="{% static 'assets/infernape_evolution.png' %}" >
-                    <p class="pokemon__evolutionLine__name"> Infernape</p>
+                    <img src="{{ pokemon.estagio_dois_img }}" >
+                    <p class="pokemon__evolutionLine__name">{{ pokemon.estagio_dois_nome }}</p>
                 </div>
                 <img src="{% static 'assets/arrow.png' %}">
                 <div class="pokemon__evolutionLine__individual" >
-                    <img src="{% static 'assets/infernape_evolution.png' %}" >
-                    <p class="pokemon__evolutionLine__name" >Infernape</p>
+                    <img src="{{ pokemon.estagio_tres_img }}" >
+                    <p class="pokemon__evolutionLine__name" >{{ pokemon.estagio_tres_nome }}</p>
                 </div>
                 <img>
             </div>

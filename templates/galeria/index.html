@@ -5,16 +5,16 @@
         <h1 class="principal__titulo">My Pokemon Team</h1>
         <ul class="principal__lista">
             {% if pokemon_grupo %}
-            {% for pokemon in pokemon_grupo %}
-            <li>
-                <a href="{% url 'pokemon' pokemon.id %}" class="principal__grupo__pokemon">
-                    <div class="principal__grupo__pokemon__imagem">
-                        <img  src="{{ pokemon.imagem_index}}">
-                    </div>
-                    <p class="principal__grupo__nome">{{ pokemon.nome }}</p>
-                </a>
-            </li>
-            {% endfor %}
+                {% for pokemon in pokemon_grupo %}
+                    <li>
+                        <a href="{% url 'pokemon' pokemon.id %}" class="principal__grupo__pokemon">
+                            <div class="principal__grupo__pokemon__imagem">
+                                <img  src="{{ pokemon.imagem_index}}">
+                            </div>
+                            <p class="principal__grupo__nome">{{ pokemon.nome }}</p>
+                        </a>
+                    </li>
+                {% endfor %}
             {% else %}
             {% endif %}
         </ul>
