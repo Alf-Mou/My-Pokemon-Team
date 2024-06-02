@@ -1,12 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --cor-de-fundo: #181818;
-    --cor-secundaria: #262626;
-    --cor-texto: #FFFFFF;
-    --cor-container: #242526;
+  --cor-de-fundo: #181818;
+  --cor-secundaria: #262626;
+  --cor-texto: #FFFFFF;
+  --cor-container: #242526;
 
-    --fonte-principal: "Poppins", sans-serif;
+  --fonte-principal: "Poppins", sans-serif;
+
+  --cor-normal: #AAAA99;
+  --cor-fire: #FF4422;
+  --cor-water: #3399FF;
+  --cor-electric: #FECB32;
+  --cor-grass: #77CC55;
+  --cor-ice: #66CCFF;
+  --cor-fighting: #B65342;
+  --cor-poison: #AA5599;
+  --cor-ground: #DDBB55;
+  --cor-flying: #8899FF;
+  --cor-psychic: #FF5599;
+  --cor-bug: #AABB22;
+  --cor-rock: #BBAA66;
+  --cor-ghost: #6666BB;
+  --cor-dragon: #7766EE;
+  --cor-dark: #775544;
+  --cor-steel: #AAAABB;
+  --cor-fairy: #EE99EE;
 }
 
 *{
@@ -218,11 +237,6 @@ body {
   border-radius: 8px;
 }
 
-.pokemon__titulo {
-  font-size: 24px;
-  color: #F84D2E;
-}
-
 .pokemon__container2 {
   display: flex;
   align-items: center;
@@ -264,7 +278,6 @@ body {
 }
 
 .tipo__container__tipo2 {
-  background-color: #B65342;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,13 +286,26 @@ body {
   border-radius: 16px;
 }
 
+.tipo__cor__palavra {
+  color: white;
+}
+
 .tipo1 {
   font-size: 24px;
+  color: white;
 }
 
 .tipo2 {
   font-size: 24px;
+  color: white;
 }
+
+.pokemon__titulo {
+  font-size: 24px;
+  background-color: transparent;
+}
+
+
 
 .pokemon__container3 {
   display: flex;
